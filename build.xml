@@ -1,0 +1,16 @@
+<project name="JetlangActors" default="javac">
+
+	<target name="javac">
+		<mkdir dir="bin"/>
+		<javac classpath="lib/jetlang-0.2.10.jar" source="1.6" target="1.6" srcdir="src" destdir="bin"/> 
+	</target>
+	
+	<target name="clean">
+		<delete>
+			<fileset dir="bin">
+				<include name="**"/>
+			</fileset>
+		</delete>
+	</target>
+
+</project>
